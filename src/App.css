@@ -1,0 +1,177 @@
+:root {
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 16px;
+  background: #0f172a;
+  color: #fff;
+}
+
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 16px;
+}
+
+.page {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.card--income {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+}
+
+.card--expense {
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.card--balance {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font: inherit;
+  font-weight: 700;
+}
+
+.button--primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.button--danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.control {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  font: inherit;
+}
+
+textarea.control {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.transaction-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.transaction-item {
+  border: 1px solid #dbe2ea;
+  border-radius: 14px;
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.transaction-item.selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.status-banner {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
+
+.status-info {
+  color: #1e3a8a;
+  border-color: #bfdbfe;
+  background: #eff6ff;
+}
+
+.status-error {
+  color: #b91c1c;
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-logo {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
